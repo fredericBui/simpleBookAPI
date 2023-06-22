@@ -32,11 +32,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         }
 
         if ($foundBook) {
-            echo json_encode($foundBook);
+            echo json_encode($foundBook, JSON_PRETTY_PRINT);
         } else {
             echo json_encode(['error' => 'Book not found']);
         }
     } else {
-        echo json_encode($books);
+        echo json_encode($books, JSON_PRETTY_PRINT);
     }
 }
