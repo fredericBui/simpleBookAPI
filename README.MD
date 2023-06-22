@@ -36,7 +36,7 @@ To retrieve all books, send an HTTP GET request to the following URL:
 
 The server will respond with a JSON array containing all the books in the following format:
 
-`
+````
 [
 {
 "id": 1,
@@ -53,13 +53,13 @@ The server will respond with a JSON array containing all the books in the follow
 "synopsis": "Synopsis 2"
 },
 ...
-]`
+]```
 
 ### Retrieving a specific book
 
 To retrieve a specific book, append the id parameter to the URL. For example, to retrieve a book with ID 1, send an HTTP GET request to the following URL:
 
-`http://localhost:8000/books.php?id=1`
+```http://localhost:8000/books.php?id=1```
 
 If the book with the provided ID exists, the server will respond with the details of the book in JSON format. If the book is not found or the id parameter is missing, an appropriate error message will be returned.
 
@@ -70,3 +70,4 @@ Contributions to this project are welcome. If you find any issues or have sugges
 ## License
 
 This project is licensed under the MIT License.
+````
